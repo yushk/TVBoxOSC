@@ -77,9 +77,9 @@ public class ApiConfig {
         }
         return instance;
     }
-
+//设置内置源
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://刚刚.live/猫");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
